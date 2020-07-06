@@ -6,6 +6,6 @@
 <ul>
     @foreach (var Item in Model)
     {
-        <li>Description <a asp-action="delete" asp-route-id="@Item.Id">Delete</a></li>
+        <li>@Item.Description <a asp-action="delete" asp-route-id="@Item.Id">Delete</a></li>
     }
 </ul>
